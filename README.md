@@ -1,4 +1,4 @@
-# profi
+# title
 A static website to introduce myself.
 
 # tools
