@@ -108,11 +108,11 @@
 <div class="navbar">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="profile.html"><img alt="brand" src="icon_logo.jpg" style="width: 75%"></a>
+			<a class="navbar-brand" href="A_profile.html"><img alt="brand" src="icon_logo.jpg" style="width: 75%"></a>
 		</div>
 			<ul class="nav navbar-nav navbar">
-				<li class="nav_item"><a href="profile.html#body">About Me</a></li>
-				<li class="nav_item"><a href="profile.html#Contact">Contact</a></li>
+				<li class="nav_item"><a href="A_profile.html#body">About Me</a></li>
+				<li class="nav_item"><a href="A_profile.html#Contact">Contact</a></li>
 			</ul>				
 	</div>
 </div>
