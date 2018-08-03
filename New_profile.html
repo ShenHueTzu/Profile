@@ -18,62 +18,83 @@
 
 
   <style>
-  body{
-  	font-family: 微軟正黑體;
-  }
-  a{
+  	body{
+  	
+  		font-family: 微軟正黑體;
+ 	}
+  	
+  	a{
+
   	  	color:#495057 ;
-  }
-  .navbar-nav {
-      flex-direction: row;
+  	}
+  
+  	.navbar-nav {
+   
+      flex-direction: row;    
     }  
-  .nav_item{
-  	font-family: sans-serif;
-  	padding-left: 30px;
-  }
+  
+  	.nav_item{
+  		font-family: sans-serif;
+  		padding-left: 30px;
+  	}
 
   /* Make the image fully responsive */
 
 
-  .carousel-inner img {
+  	.carousel-inner img {
       width: 100%;
       height: 100%;
-  }
+  	}
 
-	  	.imgHolder {
-	    	position: absolute;
-	    	padding-top: 20px
-	    	width: 285px;
-    		height: 175px;
+	.imgHolder {
+		position: absolute;
+		padding-top: 20px
+		width: 285px;
+    	height: 175px;
 
-		}
-		.imgHolder, .caption {
-	    	position: absolute;
-	    	width: 350px;
-   			height: 450px;
-   			padding-top: 40px;
-	    	right: 0px;
-	    	color: #ffffff;
-	    	background: #476b6b;
-			text-align:center;
-			font-weight:bold;
-			opacity:0.7;
-		}
+	}
+	
+	.imgHolder, .caption {
+		position: absolute;
+		width: 350px;
+   		height: 450px;
+   		padding-top: 40px;
+    	right: 0px;
+    	color: #ffffff;
+    	background: #476b6b;
+    	text-align:center;
+		font-weight:bold;
+		opacity:0.7;
+	}
 
-		.about{
-			height: 450px;
-			text-align: center;
-			background: #94b8b8;
-			padding-top: 20px;
-		}
+	.about{
+		height: 450px;
+		text-align: center;
+		background: #94b8b8;
+		padding-top: 20px;
+	}
+
+	#web_crawler1, #web_crawler2, #shopping_cart{
+		padding-left: 50px;
+		padding-top: 50px;
+		padding-bottom: 20px;
 
 
+	}
+	#web_crawler2{
+		background: #799696;
+		color: white;		
+	}
 
 
-  .jumbotron{
-  	text-align: center;
-  	padding-bottom: 0px;
-  }
+  	.jumbotron{
+  		text-align: center;
+  		padding-bottom: 0px;
+	}
+
+	#github_name{
+		color: white;
+	}
 
   </style>
 </head>
@@ -90,9 +111,8 @@
 			<a class="navbar-brand" href="New_profile.html"><img alt="brand" src="icon_logo.jpg" style="width: 75%"></a>
 		</div>
 			<ul class="nav navbar-nav navbar">
-				<li class="nav_item"><a href="About_me.html">About Me</a></li>
-				<li class="nav_item"><a href="#">Works</a></li>
-				<li class="nav_item"><a href="#">Contact</a></li>
+				<li class="nav_item"><a href="New_profile.html#body">About Me</a></li>
+				<li class="nav_item"><a href="New_profile.html#Contact">Contact</a></li>
 			</ul>				
 	</div>
 </div>
@@ -144,6 +164,7 @@
   <a class="carousel-control-next" href="#pic_carousel" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
+
 </div>
 
 
@@ -192,11 +213,12 @@
 
 <!--middle-info-->
 	<div class="imgholder">
-		<div class="caption">
+		<div class="caption" id ="Contact">
 			<br><h1>Information</h1>
 			<br>Name: 沈慧慈
 			<br>Phone: 0972122324
 			<br>E-mail: lily7811245@gmail.com
+			<br>Github: <a id="github_name" href="https://github.com/ShenHueTzu">ShenHueTzu</a>
 
 		</div>
 	</div>
@@ -234,14 +256,60 @@
 		</div>
 	</div>
 
+<hr>
 
+<div class="row" id="web_crawler1">
+	<div class="col-lg-4">
+		<h1>Web Crawler</h1>
+		<li>daily currency rate</li>
+		<li>Python</li>
+		<li>format</li>	
+	</div>	
+	<div class="col-lg-4">
+		<h3>Result</h3><img src="currency_rate.jpg" width="75%">
+	</div>
+	<div class="col-lg-4">
+		<a href="https://github.com/ShenHueTzu/Daily-currency-rate"><em>More in github.</em></a>
+	</div>
+</div>
+
+<hr>
+
+<div class="row" id="web_crawler2">
+	<div class="col-lg-4">
+		<h1>Web Crawler</h1>
+		<li>analyse movie comment</li>
+		<li>Python</li>
+		<li>word cloud in Chinese</li>	
+	</div>	
+	<div class="col-lg-4">
+		<h3>Result</h3><img src="word_cloud.png" width="75%">
+	</div>
+	<div class="col-lg-4">
+		<a href="https://github.com/ShenHueTzu/movie-comment-"><em style="color: white;">More in github.</em></a>
+	</div>
+</div>
+
+<hr>
+
+<div class="row" id="shopping_cart">
+	<div class="col-lg-4">
+		<h1>Student repository</h1>
+		<li>HTML/CSS</li>
+		<li>PHP MySQL</li>
+		<li>A shopping cart</li>
+	</div>	
+	<div class="col-lg-4">
+		<a href="https://github.com/ShenHueTzu/shopping-cart"><em>More in github.</em></a>
+	</div>
+</div>
 
 <!-- footer_contact -->
 <div class="jumbotron">
-	<div onclick="To_Top()" id="myBtn"><img src="upwards-arrow.png"></div>
+	<div class="to_top" onclick="To_Top()" title="To Top" ><img src="upwards-arrow.png"></div>
 	<hr/>
-	<a href="class="icon_contact"><img alt="FB" src="icons8-facebook-filled-50.png" width="3%"></a>
-	<a href="class="icon_contact"><img alt="mail" src="icons8-gmail-filled-50.png" width="3%"></a>		
+	<a href="https://www.facebook.com/shen.216"><img alt="FB" src="icons8-facebook-filled-50.png" width="3%"></a>
+	<img alt="mail" src="icons8-gmail-filled-50.png" width="3%" title="lily7811245@gamil.com"></a>		
 </div>
 
 
