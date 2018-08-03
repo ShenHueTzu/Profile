@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>About Me</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		font-family: 
+			微軟正黑體;
+  		}
+  		a{
+  	  		color:#495057 ;
+ 		}
+  		.navbar-nav {
+      		flex-direction: row;
+    	}  
+  		.nav_item{
+  			font-family: sans-serif;
+  			padding-left: 30px;
+  		}
+
+	  	.imgHolder {
+	    	position: relative;
+	    	width: 285px;
+    		height: 175px;
+
+		}
+		.imgHolder, .caption {
+	    	position: absolute;
+	    	width: 350px;
+   			height: 450px;
+	    	top: 175px;
+	    	right: 0px;
+	    	color: #ffffff;
+	    	background: #476b6b;
+			text-align:center;
+			font-weight:bold;
+			opacity:0.7;
+		}
+
+		.about{
+			height: 200px;
+			text-align: center;
+			background: #94b8b8;
+			padding-top: 50px;
+		}
+
+
+		.jumbotron{
+		  	text-align: center;
+		  	padding-bottom: 0px;
+		}
+
+		#github_name{
+			color: white;
+		}
+
+
+	</style>
+
+
+</head>
+
+<body>
+
+	<!-- header menu -->
+	<div class="navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="New_profile.html"><img alt="brand" src="icon_logo.jpg" style="width: 75%"></a>
+			</div>
+				<ul class="nav navbar-nav navbar">
+					<li class="nav_item"><a href="About_me.html">About Me</a></li>
+					<li class="nav_item"><a href="#">Works</a></li>
+					<li class="nav_item"><a href="#">Contact</a></li>
+				</ul>				
+		</div>
+	</div>
+
+
+	<!--pic middle-->
+	<div class="imgholder">
+		<img src="about1.jpg" alt="about" width="100%" />
+		<div class="caption">
+			<br><h1>Information</h1>
+			<br>Name: 沈慧慈
+			<br>Phone: 0972122324
+			<br>E-mail: lily7811245@gmail.com
+			<br>Github: <a id="github_name" href="https://github.com/ShenHueTzu">ShenHueTzu</a>
+		</div>
+	</div>
+
+<!--about-->
+<hr>
+	<div class="about">
+		<h1>Graduated from NSYSU in 2018. </h1>	
+	</div>
+
+
+<!-- footer_contact -->
+<div class="jumbotron">
+	<div class="to_top" onclick="To_Top()" title="To Top" ><img src="upwards-arrow.png"></div>
+	<hr/>
+	<a href="class="icon_contact"><img alt="FB" src="icons8-facebook-filled-50.png" width="3%"></a>
+	<a href="class="icon_contact"><img alt="mail" src="icons8-gmail-filled-50.png" width="3%"></a>		
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+function To_Top(){
+	document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+</script>
+
+
+
+
+
+</body>
+</html>
