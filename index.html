@@ -2,6 +2,7 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 
 <title>Shen Hue-Tzu</title>
@@ -46,20 +47,8 @@
       height: 100%;
   	}
 
-	.imgHolder {
-		position: absolute;
-		padding-top: 20px
-		width: 285px;
-    	height: 175px;
-
-	}
 	
-	.imgHolder, .caption {
-		position: absolute;
-		width: 350px;
-   		height: 450px;
-   		padding-top: 40px;
-    	right: 0px;
+	#imgHolder, .caption {
     	color: #ffffff;
     	background: #476b6b;
     	text-align:center;
@@ -68,10 +57,10 @@
 	}
 
 	.about{
-		height: 450px;
+
 		text-align: center;
 		background: #94b8b8;
-		padding-top: 20px;
+		padding: 20px;
 	}
 
 	#web_crawler1, #web_crawler2, #shopping_cart{
@@ -211,17 +200,6 @@
 	</div>
 
 
-<!--middle-info-->
-	<div class="imgholder">
-		<div class="caption" id ="Contact">
-			<br><h1>Information</h1>
-			<br>Name: 沈慧慈
-			<br>Phone: 0972122324
-			<br>E-mail: lily7811245@gmail.com
-			<br>Github: <a id="github_name" href="https://github.com/ShenHueTzu">ShenHueTzu</a>
-
-		</div>
-	</div>
 
 
 
@@ -229,7 +207,7 @@
 <!--about-->
 <hr>
 	<div class="about">
-		<img src="creativity.png" style="padding-right: 25%">	
+		<img src="creativity.png" >	
 		<br><br><br>
 		<div class="row">
 			<div class="col-lg-3">
@@ -245,16 +223,26 @@
 				<a class="btn btn-secondary" href="https://github.com/ShenHueTzu/movie-comment-" role="button">details</a>
 			</div>
 			
-
 			<div class="col-lg-3">
 				<h2>Shopping cart</h2>
 				<p>Student repository</p>
 				<a class="btn btn-secondary" href="#" role="button">details</a>
 			</div>
 
+<!--middle-info-->
+			<div id="imgholder" class="col-lg-3">
+				<div class="caption" id ="Contact">
+					<br><h1>Information</h1>
+					<br>Name: 沈慧慈
+					<br>Phone: 0972122324
+					<br>E-mail: lily7811245@gmail.com
+					<br>Github: <a id="github_name" href="https://github.com/ShenHueTzu">ShenHueTzu</a>
+					<br><br>
+				</div>
+			</div>
 
 		</div>
-	</div>
+</div>
 
 <hr>
 
