@@ -4,4 +4,4 @@
 HTML/CSS with Boostrap
 JavaScript
 
-# it's a RWD 
+# RWD 
