@@ -43,13 +43,23 @@
       height: 100%;
   	}
 
-	
+	#more_btn{
+		color: white;
+	}
+
+	.more_info{
+		display: none;
+		text-align: left;
+		padding-left: 25%;
+
+	}
+
 	#imgHolder, .caption {
-    	color: #ffffff;
-    	background: #476b6b;
+    	color: white;
+    	background: #293d3d;
     	text-align:center;
 		font-weight:bold;
-		opacity:0.7;
+		margin-top: 20px;
 	}
 
 	.about{
@@ -63,9 +73,12 @@
 		padding-left: 50px;
 		padding-top: 50px;
 		padding-bottom: 20px;
-
-
 	}
+
+	.data-button{
+		color: white;
+	}
+
 	#web_crawler1,#shopping_cart{
 		background: #799696;
 		color: white;		
@@ -96,6 +109,30 @@
 		});
 	});
 
+
+	$(document).ready(function(){
+		$('.web_btn').click(function(){
+			$('html,body').animate({scrollTop:$('#website_demo').offset().top},800);
+		});
+	});
+
+	$(document).ready(function(){
+		$('.crawler1_btn').click(function(){
+			$('html,body').animate({scrollTop:$('#web_crawler1').offset().top},800);
+		});
+	});
+
+	$(document).ready(function(){
+		$('.crawler2_btn').click(function(){
+			$('html,body').animate({scrollTop:$('#web_crawler2').offset().top},800);
+		});
+	});
+
+	$(document).ready(function(){
+		$('.std_btn').click(function(){
+			$('html,body').animate({scrollTop:$('#shopping_cart').offset().top},800);
+		});
+	});	
 </script>
 
 </head>
@@ -219,42 +256,44 @@
 <!--about-->
 <hr>
 	<div class="about">
-		<img src="creativity.png" >	
+		<img src="creativity.png" alt="idea">	
 		<br><br><br>
 		<div class="row">
+
+			<div class="col-lg-3">
+				<h2>Demo Website</h2>
+				<p>CoffeShop</p>
+				<a class="btn btn-secondary web_btn" role="button" id="more_btn">more</a>
+				<a class="btn btn-secondary" href="https://shenhuetzu.github.io/demo_website/" role="button">DEMO</a>
+			</div>
+
 			<div class="col-lg-3">
 				<h2>Web crawler</h2>
 				<p>Daliy rate from bank of Taiwan with Python. </p>
-				<a class="btn btn-secondary" href="https://github.com/ShenHueTzu/Daily-currency-rate" role="button">details</a>
-			</div>
-			
+				<a class="btn btn-secondary crawler1_btn" role="button" id="more_btn">more</a>
+				<a class="btn btn-secondary" href="https://github.com/ShenHueTzu/Daily-currency-rate" role="button">github</a>
+				
+			</div>		
 
 			<div class="col-lg-3">
 				<h2>Web crawler</h2>
 				<p>Analyse words from movie comments and Build word cloud with Python.</p>
-				<a class="btn btn-secondary" href="https://github.com/ShenHueTzu/movie-comment-" role="button">details</a>
+				<a class="btn btn-secondary crawler2_btn" role="button" id="more_btn">more</a>
+				<a class="btn btn-secondary" href="https://github.com/ShenHueTzu/movie-comment-" role="button">github</a>
 			</div>
 			
 			<div class="col-lg-3">
 				<h2>Shopping cart</h2>
 				<p>Student repository</p>
-				<a class="btn btn-secondary" href="#" role="button">details</a>
-			</div>
-
-<!--middle-info-->
-			<div id="imgholder" class="col-lg-3">
-				<div class="caption" id ="Contact">
-					<br><h1>Information</h1>
-					<br>Name: 沈慧慈
-					<br>Phone: 0972122324
-					<br>E-mail: lily7811245@gmail.com
-					<br>Github: <a id="github_name" href="https://github.com/ShenHueTzu">ShenHueTzu</a>
-					<br><br>
-				</div>
+				<a class="btn btn-secondary std_btn" role="button" id="more_btn">more</a>
+				<a class="btn btn-secondary" href="#" role="button">github</a>
 			</div>
 
 		</div>
-</div>
+		<!--middle-info-->
+	</div>
+
+	
 
 <hr>
 
@@ -310,8 +349,8 @@
 <div class="row" id="shopping_cart">
 	<div class="col-lg-4">
 		<h1>Student repository</h1>
-		<li>HTML/CSS</li>
 		<li>PHP/MySQL</li>
+		<li>member sign in/ sign up</li>
 		<li>A shopping cart</li>
 	</div>	
 	<div class="col-lg-4">
@@ -319,12 +358,25 @@
 	</div>
 </div>
 
+
+<!--contact-->
+<div id="imgholder">
+			<div class="caption" id ="Contact">
+				<br><h1>Information</h1>
+				<br>Name: 沈慧慈
+				<br>Phone: 0972122324
+				<br>E-mail: lily7811245@gmail.com
+				<br>Github: <a id="github_name" href="https://github.com/ShenHueTzu">ShenHueTzu</a>
+				<br><br>
+			</div>
+		</div>
+
 <!-- footer_contact -->
 <div class="jumbotron">
 	<div class="to_top" onclick="To_Top()" title="To Top" ><img src="upwards-arrow.png"></div>
 	<hr/>
-	<a href="https://www.facebook.com/shen.216"><img alt="FB" src="icons8-facebook-filled-50.png" width="3%"></a>
-	<img alt="mail" src="icons8-gmail-filled-50.png" width="3%" title="lily7811245@gamil.com"></a>
+	<a href="https://www.facebook.com/shen.216"><img alt="FB" src="icons8-facebook-filled-50.png"></a>
+	<img alt="mail" src="icons8-gmail-filled-50.png" title="lily7811245@gamil.com"></a>
 </div>
 
 
