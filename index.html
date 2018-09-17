@@ -133,6 +133,13 @@
 			$('html,body').animate({scrollTop:$('#shopping_cart').offset().top},800);
 		});
 	});	
+
+	$(document).ready(function(){
+		$('.to_top').click(function(){
+			$('html,body').animate({scrollTop:$('body').offset().top},800);
+		});
+	});	
+
 </script>
 
 </head>
@@ -373,22 +380,11 @@
 
 <!-- footer_contact -->
 <div class="jumbotron">
-	<div class="to_top" onclick="To_Top()" title="To Top" ><img src="upwards-arrow.png"></div>
+	<div class="to_top" title="To Top" ><img src="upwards-arrow.png"></div>
 	<hr/>
 	<a href="https://www.facebook.com/shen.216"><img alt="FB" src="icons8-facebook-filled-50.png"></a>
 	<img alt="mail" src="icons8-gmail-filled-50.png" title="lily7811245@gamil.com"></a>
 </div>
-
-
-
-
-
-<script type="text/javascript">
-	
-function To_Top(){
-	document.documentElement.scrollTop = 0;
-}
-</script>
 
 
 </body>
